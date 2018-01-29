@@ -20,7 +20,7 @@ let initialState = {
 
 let currentState = initialState;
 
-function reducer(state, action) {
+function reducer(state=initialState, action) {  // setting state = initialstate will use the initialState if an 'undefined' parameter is passed
   swtich(action.type) {
     case TITLE_UPDATE:
       return { ...state, title: action.data};

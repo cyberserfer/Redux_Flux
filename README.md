@@ -41,7 +41,7 @@ function render(state){
   state.content.forEach(content => {
   let str = '';
   state.content.forEach(() => {
-  
+  str += content + '/n'
   }
   });
 }

@@ -12,10 +12,13 @@ the reducer returns state items
 const TITLE_UPDATE = `alsdkjlaskdfj`
 const CONTENT_UPDATE = `laskjdflaskjf1
 
-let state = {
-  title: '',
+
+let initialState = {
+  title: 'Hi There',
   content: []
 }
+
+let currentState = initialState;
 
 function reducer(state, action) {
   swtich(action.type) {
@@ -27,3 +30,33 @@ function reducer(state, action) {
       return state;
   }
 }
+
+
+to test
+console.log(reducer(initialState, {type: TITLE_UPDATE, payload: `new stuff for the title`}));
+console.log(reducer(initialState, {type: CONTENT_UPDATE, payload: `new stuff for the title`}));
+
+function render(state){
+  titleValue.innerText = state.title;
+  state.content.forEach(content => {
+  let str = '';
+  state.content.forEach(() => {
+  
+  }
+  });
+}
+
+render(initialState);
+
+submitContent.addEventListener('click', () => {
+  const value = input.value;
+  currentState = reducer(currentState, {type: CONTENT_UPDATE, payload: value})
+  render(currentState)
+})
+
+submitTitle.addEventListener('click', () => {
+  const value = input.value;
+  currentState = reducer(currentState, {type: TITLE_UPDATE, payload: value})
+  render(currentState)
+})
+```

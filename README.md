@@ -1,5 +1,7 @@
 # Redux_Flux
 
+npm install --save Redux React-Redux (to bring packages in)
+
 reducers take state and an action
 
 function reducer(state, action)

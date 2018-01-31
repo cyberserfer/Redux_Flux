@@ -2,6 +2,8 @@
 
 npm install --save Redux React-Redux (to bring packages in)
 
+reducer lives inside of the store
+
 reducers take state and an action
 
 function reducer(state, action)

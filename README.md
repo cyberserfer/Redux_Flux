@@ -12,6 +12,10 @@ the action.type is always a string
 
 the reducer returns state items
 
+the store takes objects
+
+the store does not know what to do with a function(object)
+
 ```
 const TITLE_UPDATE = `alsdkjlaskdfj`
 const CONTENT_UPDATE = `laskjdflaskjf1

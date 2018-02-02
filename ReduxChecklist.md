@@ -19,5 +19,7 @@
         b. Create two functions
             i. Map State to Props
             ii. Map Dispatch to Props
-        c. 'connect' function takes those two functions and returns a function and pass that function the item that renders the object 
-const someName = connect(mapStateToProps, mapDispatchToProps)(Function That Renders an
+        c. 'connect' function takes those two functions and returns a function and pass that function
+        the item that renders the object 
+    
+    const someName = connect(mapStateToProps, mapDispatchToProps)(Function That Renders an

@@ -1,6 +1,6 @@
 # Redux_Flux
 
-npm install --save Redux React-Redux (to bring packages in)
+npm install --save redux react-redux (to bring packages in)
 
 reducer lives inside of the store
 
